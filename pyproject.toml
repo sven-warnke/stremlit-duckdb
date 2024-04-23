@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "stremlit-duckdb"
+version = "0.1.0"
+description = ""
+authors = ["SvenWarnke <sven@ge-warnke.de>"]
+readme = "README.md"
+packages = [{include = "stremlit_duckdb"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.33.0"
+duckdb = "^0.10.2"
+ruff = "^0.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
