@@ -1096,6 +1096,21 @@ watchdog = {version = ">=2.1.5", markers = "platform_system != \"Darwin\""}
 snowflake = ["snowflake-connector-python (>=2.8.0)", "snowflake-snowpark-python (>=0.9.0)"]
 
 [[package]]
+name = "streamlit-autorefresh"
+version = "1.0.1"
+description = "Simple way to autorefresh your Streamlit apps"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "streamlit-autorefresh-1.0.1.tar.gz", hash = "sha256:a89abf23f2c4e52d37be442115cd5566b41f382e3c09ff08817e17a25f50b8ed"},
+    {file = "streamlit_autorefresh-1.0.1-py3-none-any.whl", hash = "sha256:8f0a772eff9d56807d19dc422e44ef92d900bbb22b1b85de31d8d82ea7d875f1"},
+]
+
+[package.dependencies]
+streamlit = ">=0.75"
+
+[[package]]
 name = "tenacity"
 version = "8.2.3"
 description = "Retry code until it succeeds"
@@ -1242,4 +1257,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "4105850ca07f7149209e81fe951580a09c751e8e0be8aaf83808e4d9e4df832c"
+content-hash = "f177e09f2ee4249b0d2b2d5708511b855a18ff759f7c548fb695b69bd4361371"
