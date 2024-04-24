@@ -7,6 +7,7 @@ import streamlit as st
 import streamlit_autorefresh
 
 DATABASE = pl.Path("data/data.duckdb")
+DATABASE.parent.mkdir(exist_ok=True, parents=True)
 
 
 count = streamlit_autorefresh.st_autorefresh(interval=3000)
