@@ -5,7 +5,7 @@ import streamlit as st
 
 import plotly.express as px
 
-DATABASE = pl.Path("data.duckdb")
+DATABASE = pl.Path("data/data.duckdb")
 
 
 @st.cache_resource
