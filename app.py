@@ -1,12 +1,15 @@
 import datetime
 import io
 import pathlib as pl
-import time
 
 import duckdb
 import streamlit as st
+import streamlit_autorefresh
 
 DATABASE = pl.Path("data/data.duckdb")
+
+
+count = streamlit_autorefresh.st_autorefresh(interval=3000)
 
 
 @st.cache_resource
@@ -106,8 +109,6 @@ def main():
         login(conn)
     else:
         chat(conn)
-        time.sleep(10)
-        st.rerun()
 
 
 if __name__ == "__main__":
